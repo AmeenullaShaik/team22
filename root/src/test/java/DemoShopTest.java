@@ -6,9 +6,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
 public class DemoShopTest {
-	public static void main(String[] args) {
+	@Test
+	public void main( ) {
 		System.setProperty("webdriver.gecko.driver", "./driver/geckodriver.exe");
 		WebDriver driver=new FirefoxDriver();
 		driver.get("http://demowebshop.tricentis.com/");
